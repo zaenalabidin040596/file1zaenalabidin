@@ -1,0 +1,43 @@
+#include<iostream>///header C++ yang menyatakan penggunaan library iostream untuk menampilkan dan memasukan data dengan metode cout dan cin
+#include<conio.h>///
+#include<stdio.h>///ini artinya standart input output library
+#include<stdlib.h>///ini artinya standar libary
+#include<string>///jangan lupa tambahkan libary string
+using namespace std;
+int main()
+{
+char kalimat[100];///berapa karakter maksimal untuk variabel"kata"
+int i,jumkecil,jumkapital;
+jumkecil=0;
+jumkapital=0;
+
+cout<<"Nama:Zaenal Abidin\n";
+cout<<"Nim:191011402886\n";
+cout<<"Kelas:02TPLE001\n";
+cout<<"UTS Algoritma dan Pemograman\n";
+cout<<".........................................."<<endl;
+cout<<"Masukan kalimat:";
+gets(kalimat);
+system("cls");///perintah ini untuk menjeda system cls
+for(i=0;kalimat[i];i++)///menghitung kalimat.i=0
+		if(kalimat[i]>='a'&& kalimat[i]<='z')
+	jumkecil++;///variabel jumlah huruf kecil akan ditambah +1 terus sampai kondisi for tidak terpenuhi lagi
+			else
+	if(kalimat[i]>='A'&& kalimat[i]<='Z')	
+	jumkapital++;///variabel jumlah kapital akan ditambahkan  +1 terus sapai kondisi for tidak terpenuhi lagi
+	
+cout<<"isi kalimat"<<kalimat<<endl;
+cout<<endl;
+cout<<"Jumlah Huruf Kecil="<<jumkecil<<endl;///hasil output variabel jumblah huruf kecil
+cout<<"Jumlah Huruf Kapital="<<jumkapital<<endl;///hasil output variabel jumlah huruf kapital
+getch();
+return (0);///ini mengemmbalikan semua variabel menjadi menjadi 0
+
+
+
+
+
+
+
+
+}
